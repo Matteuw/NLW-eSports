@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./assets/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    
+}
+body * {
+    font-family: inter, sans-serif;
+    line-height: 160%;
+}
+ul {
+    list-style: none;
+}
+
+main {
+    max-width: 580px;
+    width: 80%;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+   
+
+}
+body h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    
+}
+body p {
+    color: #A1A1AA;
+    font-size: 16px;
+    font-weight: 400;
+}
+section {
+    border-top: 1px solid;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 18px;
+
+}
+.divCaixa {
+    background-color: #2A2634;
+    padding: 24px 24px 24px 24px;
+    border-radius: 10px;
+}
+ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    
+}
+.lista_games img {
+    max-width: 90px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.lista_canais img {
+    max-width: 70px;
+    border-radius: 50%;
+    border: 1px solid #443E54;
+    transition: .3s;
+}
+header {   
+    margin-top: 32px;
+    height: 152px;
+    
+}
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+.divCabecalho {
+    width: 120px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding: 6px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    transition: .3s;
+}
+.divCabecalho:hover {
+    transform: scale(1.2);
+}
+section ul li {
+    transition: transform .3s;
+}
+section ul li:hover {
+    transform: scale(1.2);
+}
+header .divCabecalho {
+    animation: fromtop .6s 1.2s backwards;
+    
+}
+main section {
+    animation: frombottom .6s backwards;
+}
+main section:nth-child(1){
+    animation-delay: 0;
+}
+main section:nth-child(2){
+    animation-delay: .4s;
+}
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+@keyframes fromtop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes frombottom {
+    from {
+        opacity: 0;
+        transform: translatex(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+
+
+
+    
+
+
+
+ 
